@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "00ea359a7815207aa52f7c77fb5ccc137737d8eb527c91bcbc8212cf9b829817"
+            "sha256": "d4dfac55e49ffbbe034bf05f6bb2effc56efc2da3b74c99d20e80cc5abc34783"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,14 +31,6 @@
             "index": "pypi",
             "version": "==2.1.4"
         },
-        "django-environ": {
-            "hashes": [
-                "sha256:42593bee519a527602a467c7b682aee1a051c2597f98c45f4f4f44169ecdb6e5",
-                "sha256:6f0bc902b43891656b20486938cba0861dc62892784a44919170719572a534cb"
-            ],
-            "markers": "python_version >= '3.4' and python_version < '4'",
-            "version": "==0.8.1"
-        },
         "django-filter": {
             "hashes": [
                 "sha256:6f4e4bc1a11151178520567b50320e5c32f8edb552139d93ea3e30613b886f56",
@@ -49,11 +41,11 @@
         },
         "django-graphql-jwt": {
             "hashes": [
-                "sha256:3af826631bd710ac1bdd3c7f796259f274a855514d26157b466bb82299b38eed",
-                "sha256:9126bdf095e6c199ade6682106ab5d3e32af94fbfe0e24de36f6613050ae4306"
+                "sha256:bcf0882a492e2148cba7cba3c39cf57834f736a2c289b66852239faf9b59b61e",
+                "sha256:c9c611d98510b57146c21484478eae793249553af3766a593e8f25ce73d3255a"
             ],
             "index": "pypi",
-            "version": "==0.1.5"
+            "version": "==0.3.0"
         },
         "graphene": {
             "hashes": [
@@ -92,11 +84,11 @@
         },
         "pyjwt": {
             "hashes": [
-                "sha256:b888b4d56f06f6dcd777210c334e69c737be74755d3e5e9ee3fe67dc18a0ee41",
-                "sha256:e0c4bb8d9f0af0c7f5b1ec4c5036309617d03d56932877f2f7a0beeb5318322f"
+                "sha256:00414bfef802aaecd8cc0d5258b6cb87bd8f553c2986c2c5f29b19dd5633aeb7",
+                "sha256:ddec8409c57e9d371c6006e388f91daf3b0b43bdf9fcbf99451fb7cf5ce0a86d"
             ],
-            "markers": "python_version >= '3.6'",
-            "version": "==2.3.0"
+            "index": "pypi",
+            "version": "==1.7.0"
         },
         "pytz": {
             "hashes": [
