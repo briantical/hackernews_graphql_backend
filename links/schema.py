@@ -1,4 +1,5 @@
 import graphene
+from graphql import GraphQLError
 from graphene_django import DjangoObjectType
 
 from users.schema import UserType
