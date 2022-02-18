@@ -1,6 +1,7 @@
 import graphene
 from graphql import GraphQLError
 from graphene_django import DjangoObjectType
+from django.db.models import Q
 
 from users.schema import UserType
 
@@ -18,11 +19,16 @@ class VoteType(DjangoObjectType):
 
 
 class Query(graphene.ObjectType):
-    links = graphene.List(LinkType)
-    votes = graphene.List()
+    links = graphene.List(LinkType, search=graphene.String())
+    votes = graphene.List(VoteType)
 
-    def resolve_links(self, info, **kwargs):
-        return Link.objects.all()
+    def resolve_links(self, info, search=None, **kwargs):
+        if search:
+            filter = (
+                Q(url__icontains=search) |
+                Q(description__icontains=search)
+            )
+        return Link.objects.filter(filter)
 
     def resolve_votes(self, info, **kwargs):
         return Vote.objects.all()
